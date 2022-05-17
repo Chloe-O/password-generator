@@ -20,12 +20,6 @@ function renderPassword() {
     }
 }
 
-// renderPassword()
-
 const generateBtn = document.getElementById("generate-btn")
 
 generateBtn.addEventListener("click", renderPassword)
-
-function click() {
-    console.log("Hello!")
-}
