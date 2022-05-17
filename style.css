@@ -1,5 +1,5 @@
 body {
-    background-color: #111827;
+    background-color: #172135;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,13 +13,16 @@ body {
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: #1F2937;
-    height: 600px;
-    width: 600px;
+    justify-content: space-around;
+    background-color: #374151;
+    height: 500px;
+    width: 500px;
+    padding: 2em 4em;
 }
 
 header {
-    height: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
 .password-container {
@@ -27,34 +30,67 @@ header {
    grid-template-columns: repeat(2, auto);
    place-content: center;
    gap: 2em;
-   justify-content: space-evenly;
+   justify-content: space-between;
 }
 
 .passwords {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #273549;
     color: #A78BFA;
     border-radius: 3px;
     height: 40px;
     width: 211px;
-    
 }
 
-
+.passwords:hover {
+    cursor: pointer;
+    color: #34D399;
+}
 
 .accent {
     color: #A78BFA;
 }
 
-.btn {
+.accent:hover {
+    color: #34D399;
+    animation: color-change 0.5s ease-in both;
+}
+
+@keyframes color-change {
+    0% {
+      color: #A78BFA;
+    }
+    100% {
+      color: #34D399;
+    }
+  }
+
+#generate-btn {
     color: #ffffff;
     border-radius: 3px;
     font-size: 1rem;
     text-decoration: none;
     padding: 0.75em 1em;
     background-color: #A78BFA;
+    width: fit-content;
 }
 
-.btn:hover {
+
+#generate-btn:hover {
+    cursor: pointer;
     background-color: #34D399;
     color: #111827;
+    animation: color-change-bg 0.5s ease-in both;
 }
+
+@keyframes color-change-bg {
+    0% {
+        background-color: #A78BFA;
+    }
+    100% {
+        background-color: #34D399;
+    }
+  }
+
