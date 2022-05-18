@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Karla', sans-serif;
+    
 }
 
 .content-wrapper {
@@ -26,11 +27,11 @@ header {
 }
 
 .password-container {
-   display: grid;
-   grid-template-columns: repeat(2, auto);
-   place-content: center;
-   gap: 2em;
-   justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-content: center;
+    gap: 2em;
+    justify-content: space-between;
 }
 
 .passwords {
@@ -60,12 +61,13 @@ header {
 
 @keyframes color-change {
     0% {
-      color: #A78BFA;
+        color: #A78BFA;
     }
+
     100% {
-      color: #34D399;
+        color: #34D399;
     }
-  }
+}
 
 #generate-btn {
     color: #ffffff;
@@ -89,8 +91,67 @@ header {
     0% {
         background-color: #A78BFA;
     }
+
     100% {
         background-color: #34D399;
     }
-  }
+}
 
+/*DARK/LIGHT MODE*/
+
+.switch {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    font-size: 2rem;
+    color: #A78BFA;
+}
+
+#dark, #light {
+    cursor: pointer;
+}
+
+#dark:hover, #light:hover {
+    animation: color-change 0.5s ease-in both;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 480px) {
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        padding: 1em 2em;
+    }
+
+    header {
+        margin-bottom: 2em;
+        align-items: center;
+    }
+    
+    .password-container {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        place-content: center;
+        gap: 2em;
+        justify-content: space-between;
+    }
+
+    h1, h3 {
+        text-align: center;
+    }
+    
+    .passwords {
+        justify-content: center;
+        align-items: center;
+        min-width: 211px;
+    }
+
+    #generate-btn {
+        align-self: center;
+    }
+}

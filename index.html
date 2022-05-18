@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Password Generator | 👨‍💻</title>
 </head>
+
 <body>
+    <div class="switch">
+        <i id="dark" class=" fa-solid fa-moon"></i>
+        <i id="light" class=" fa-solid fa-sun"></i>
+    </div>
     <div class="content-wrapper">
         <header>
             <h1>Generate a <span class="accent">new password</span></h1>
             <h3>Generate a choice of secure passwords, start by clicking the button below</h3>
-            <a id="generate-btn"><i class="fa-solid fa-circle-arrow-right"></i>  Generate passwords</a>
+            <a id="generate-btn"><i class="fa-solid fa-circle-arrow-right"></i> Generate passwords</a>
         </header>
         <div class="password-container">
             <div class="passwords"></div>
@@ -28,4 +35,5 @@
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
